@@ -1,15 +1,40 @@
 <style>
 
-h1 {
-  color:lightblue
+body {
+  font-family:Georgia;
+  margin-left: 50px;
 }
+h1 {
+   color:lightpink;
+   font-size: 50px;
+ }
 h2 {
-  color:lightpink
+  color:lightpink;
+  font-size: 30px;
+  font-family: Times;
+  border: 2px lightblue;
+  border-style: solid;
+  height: 20px;
+  width: 150px;
+  padding: 8px;
+  padding-bottom: 20px;
+}
+#Aboutme {
+  width: 130px;
+}
+#Curriculum {
+  width: 155px;
+}
+#Contacts{
+  width: 120px
 }
 li {
-  color:lightblue
+  color:lightblue;
 }
 a {
-  color: lightblue
+  color: lightblue;
+}
+p {
+  margin-left: 20px;
 }
 </style>
