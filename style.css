@@ -1,40 +1,40 @@
-<style>
 
 body {
-  font-family:Georgia;
-  margin-left: 50px;
+  margin-left: 20px;
+  font-size: 15px;
+  font-family: FunctionPro, Helvetica, Arial, TazuganeGothic, sans-serif;
+  font-weight: 300;
 }
 h1 {
-   color:lightpink;
-   font-size: 50px;
+   color:rgb(179,31,63);
+   font-size: 40px;
+   text-transform: uppercase;
+   border-width: 100%;
+   border-top: 5px solid rgb(179,31,63);
+   border-bottom: 5px solid rgb(179,31,63);
+ }
+ .barra {
+   display: inline-table;
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-top:5px
+}
+ .barra a {
+   color:rgb(179,31,63);
  }
 h2 {
-  color:lightpink;
+  color:rgb(179,31,63);
   font-size: 30px;
-  font-family: Times;
-  border: 2px lightblue;
-  border-style: solid;
-  height: 20px;
-  width: 150px;
-  padding: 8px;
-  padding-bottom: 20px;
-}
-#Aboutme {
-  width: 130px;
-}
-#Curriculum {
-  width: 155px;
-}
-#Contacts{
-  width: 120px
+  text-transform: uppercase;
+  border-top: 5px solid rgb(246,212,214);
+  border-bottom: 5px solid rgb(246,212,214);
 }
 li {
-  color:lightblue;
+  color:rgb(246,212,214);
 }
-a {
-  color: lightblue;
+.contatti a {
+  color:rgb(179,31,63);
 }
 p {
   margin-left: 20px;
 }
-</style>
