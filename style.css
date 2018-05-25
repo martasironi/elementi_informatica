@@ -1,5 +1,5 @@
 body {
-  background-color: #73cac1;
+  background-color: #ffd3ad;
   font-size: 15px;
   font-family: 'Oswald', sans-serif;
   font-weight: 100;
@@ -7,35 +7,88 @@ body {
   text-decoration: none;
   text-align: center;
 }
+.header{
+  width:100vw;
+  height:23vh;
+}
+.header{
+  background-image: url(header.png);
 
-.header {
+}
+.titoletto {
+  color:#ff6107;
   font-size:15px;
-  color:#3f7d8d;
   text-transform:uppercase;
   text-align: center;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface';
+  margin-top: 10px;
+}
+.about_me{
+  width:100vw;
+  height:40vh;
+  text-align: center;
+}
+.curriculum{
+  width:100vw;
+  height:40vh;
+  position:relative;
+}
+.contacts{
+  width:100vw;
+  height:20vh;
+  background-image: url(header.png);
 }
 
 h1 {
-   color: #e71d2b;
-   font-size: 40px;
+   color: #e9290f;
+   font-size: 70px;
    text-transform: uppercase;
-   text-align: center;
-   font-family: 'Abril Fatface', cursive;
+   font-family: 'Abril Fatface';
+   padding-top:0%;
+   margin-top: 20px;
   }
 
+  h1::before {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    content: "";
+    width: 90px;
+    height: 100px;
+    margin: -20px 20px 5px 0;
+    background: url(fiore_logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity:1;
+}
+h1::after {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    content: "";
+    width: 90px;
+    height: 100px;
+    margin: -20px 0 5px 20px;
+    background: url(fiore_logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity:1;
+}
+
+
 .bar {
-  color: white;
-  font-size:15px;
+  color:white;
+  font-size:16px;
   line-height: 2em;
-  border: 1px solid rgb(248,255,5);
-  background-color: rgb(248,255,5);
-  opacity:0.8;
-  width: 100%;
+  border: 1px solid #e9290f;
+  background-color: #e9290f;
+  width: 100vw;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface';
+  position:sticky;
+  top:0%;
 }
 
 .bar li {
@@ -45,20 +98,22 @@ h1 {
   list-style: none;
   list-style-type:none;
   text-decoration:none;
-  color: black;
+  color: white;
 }
 
 .bar a:hover{
-  border-bottom: 3px solid #94c9d8;
+  border-bottom: 3px solid #ff6107;
 }
 
 h2 {
-  color:#e7354e;
+  color:#e9290f;
   font-size: 30px;
   text-transform: uppercase;
-  border-bottom: 3px double #3f7d8d;
   width: auto;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface';
+  margin-top: 0;
+  padding-top: 20px;
+  margin-bottom:1em;
 }
 
 a{
@@ -72,6 +127,7 @@ a:visited{
 .contatti{
   line-height: 2em;
   text-decoration:none;
+  text-align: center;
 }
 
 ul .contatti{
@@ -81,12 +137,13 @@ list-style: none;
 .contatti a {
   color:white;
   text-transform: uppercase;
+  text-align:center;
 }
 
 .contatti a:hover{
-  border-bottom: 3px solid #ed6e87;
+  border-bottom: 3px solid #ff6107;
 }
 
 p{
-  line-height:0.7em;
+  line-height:1em;
 }
