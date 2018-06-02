@@ -3,64 +3,107 @@
 <link rel="stylesheet" href="style.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald" rel="stylesheet">
-<script scr="jquery.js"> </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Marta Sironi</title>
 </head>
-
 <body>
+
 <style>
+
+h1 {
+   color: #e9290f;
+   font-size: 70px;
+   text-transform: uppercase;
+   font-family: 'Abril Fatface';
+   padding-top:0%;
+   margin-top: 50px;
+  }
+  h2 {
+    color:#e9290f;
+    font-size: 30px;
+    text-transform: uppercase;
+    width: auto;
+    font-family: 'Abril Fatface';
+    margin-top: 0;
+    padding-top: 20px;
+    margin-bottom:1em;
+  }
+
+.bar{
+  position:absolute;
+  top:250px;
+  left:0%;
+  padding-top:2px;
+  text-decoration: none;
+}
 .moodboards{
   width:100vw;
   height:60vh;
   text-align:center;
-}
-.immagine1{
-  width:100vw;
-  height:60vh;
-  background-image: url(immagine1.jpg);
-}
-.immagine2{
-  width:100vw;
-  height:60vh;
-  background-image: url(immagine2.jpg);
-}
-.immagine3{
-  width:100vw;
-  height:60vh;
-  background-image: url(immagine3.jpg);
-}
-.immagine4{
-  width:100vw;
-  height:600vh;
-  background-image: url(immagine4.jpg);
-}
-.immagine ::after{
-  background-color:red;
-  opacity:0.6;
-  height:40px;
-  width:5px;
-  position:relative;
-  top:5px;
-  right:0%;
+  padding-top: 1.5em;
+  align-content:center;
+  position: absolute;
+  left:0%;
+  top:350px;
 }
 </style>
 
 <header class="header" id="fronte">
-  <div class="header_immagine">
-  <span class="titoletto"> Elementi di Informatica 2017/2018</span>
-  <h1>MARTA SIRONI</h1>
-  </div>
+<div class="header_immagine">
+<span class="titoletto"> Elementi di Informatica 2017/2018</span>
+<h1>MARTA SIRONI</h1>
+</div>
 </header>
 
 <div class="bar">
 <ul>
 <li> <a href="index.html"> About me </a> </li>
 <li> <a href="index.html"> Curriculum </a> </li>
-<li> <a href="index.html"> Contacts </a> </li>
 <li> <a href="portfolio.html"> Portfolio </a> </li>
-<li> <a href="spinner.html"> Spinnner </a> </li>
+<li class="dropdown">
+  <a id="esercizi">Esercizi</a>
+     <div class="tendina">
+       <a href="spinner.html">spinner</a>
+       <a href="https://codepen.io/anon/pen/mLqBMO">Java 1</a>
+       <a href="https://codepen.io/anon/pen/wXveMY">Java 2</a>
+       <a href="https://codepen.io/anon/pen/ELLPrZ">Java 3</a>
+       <a href="https://codepen.io/anon/pen/KREYdJ">Java 4</a>
+       <a href="https://codepen.io/anon/pen/erxxqP">Java 5</a>
+     </div>
+</li>
 </ul>
 </div>
 
+<div class="moodboards">
+<h2> moodboards </h2>
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="moodboard1.jpg" style="width:100%">
+    <img class="mySlides" src="moodboard2.jpg" style="width:100%">
+    <img class="mySlides" src="moodboard3.jpg" style="width:100%">
 
-<script src="portfolio.js"></script>
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
 </body>

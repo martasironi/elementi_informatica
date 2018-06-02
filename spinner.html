@@ -1,16 +1,19 @@
 <html>
 <head>
+  <title>Spinner</title>
 </head>
 <body>
 <style>
+
 @keyframes scaling {
   0%{transform:scale(0); opacity:0.5}
   100%{transform:scale(1)}
 }
 @keyframes rotation {
-  0%{transform: rotate(0deg)}
-  100%{transform: rotate(360deg)}
+  0%{transform:rotate(0deg)}
+  100%{transform:rotate(360deg)}
 }
+
 body{
   background-color: #ffd3ad;
 }
@@ -18,10 +21,11 @@ body{
   animation: rotation 2s infinite linear;
   position:absolute;
   top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  left:45%;
+  align-items: center;
+
 }
-.dot1,.dot2{
+.dot{
   animation: scaling 1s infinite alternate ease-in-out;
   height:40px;
   width:40px;
@@ -30,14 +34,14 @@ body{
   margin:10px;
   border-radius:50%;
 }
-.dot2{
-  animation-delay:0.5s;
+.due{
+  animation-delay:1s;
 }
 </style>
 
 <div class="spinner">
-<div class="dot1"></div>
-<div class="dot2"></div>
+<div class="dot uno"></div>
+<div class="dot due"></div>
 </div>
 
 </body>
