@@ -1,11 +1,14 @@
  body {
   background-color: #ffd3ad;
-  font-size: 15px;
+  font-size: 17px;
   font-family: 'Oswald', sans-serif;
   font-weight: 100;
   color: white;
   text-decoration:none;
   text-align:center;
+}
+p{
+  line-height:1em;
 }
 
 .header{
@@ -48,8 +51,8 @@
   left:0px;
 }
 .contacts{
-  width:100vw;
-  height:20vh;
+  width:100%;
+  height:25vh;
   background-image: url(header.png);
   position:absolute;
   top:1050px;
@@ -58,14 +61,14 @@
 
 h1 {
    color: #e9290f;
-   font-size: 70px;
+   font-size: 75px;
    text-transform: uppercase;
    font-family: 'Abril Fatface';
    padding-top:0%;
    margin-top: 50px;
   }
 
-  h1::before {
+h1::before {
     display: inline-block;
     position: relative;
     top: 20px;
@@ -95,7 +98,7 @@ h1::after {
 .bar {
   z-index:1;
   color:white;
-  font-size:16px;
+  font-size:19px;
   line-height: 2em;
   border: 1px solid #e9290f;
   background-color: #e9290f;
@@ -115,10 +118,6 @@ h1::after {
   text-decoration:none;
   color: white;
 }
-
-.bar a:hover{
-  border-bottom: 3px solid #ff6107;
-}
 .tendina{
   background-color:#e9290f;
   display:none;
@@ -127,16 +126,18 @@ h1::after {
   height:auto;
   z-index:1;
   margin-top:38px;
-  margin-left:-80px;
-  padding-left:20px;
+  margin-left:-90px;
   padding-bottom: 10px;
 }
 .tendina a {
-  text-align: left;
+  text-align:center;
   color:white;
   display:block;
   text-decoration:none;
   line-height:2em;
+}
+.tendina a:hover{
+  font-size: 17px;
 }
 .dropdown{
   display:inline-block;
@@ -152,38 +153,57 @@ li .dropdown{
 }
 h2 {
   color:#e9290f;
-  font-size: 30px;
+  font-size: 35px;
   text-transform: uppercase;
   width: auto;
   font-family: 'Abril Fatface';
   margin-top: 0;
-  padding-top: 20px;
+  padding-top:20px;
   margin-bottom:1em;
 }
 
 a{
   text-decoration: none;
 }
-
 a:visited{
   color:white;
 }
+.menu:hover{
+  border-bottom:2px solid #ff6107;
+  font-size: 21px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  padding-left:0px;
+}
+#Contacts{
+  margin-bottom: 0.4em;
+}
 
-.contatti{
+.contacts{
+  text-transform: uppercase;
+}
+
+.contacts ul{
+  font-size:22px;
+  text-align:center;
   line-height: 2em;
+}
+
+.contatto {
   text-decoration:none;
   color:white;
-  text-transform:uppercase;
+  padding-left:0px;
+  padding-right: 0px;
 }
 
-ul .contatti{
-list-style: none;
+.contatto:hover {
+  color:#e9290f;
+  transition:0.3s;
 }
 
-.contatti a:hover{
-  border-bottom: 3px solid #ff6107;
-}
-
-p{
-  line-height:1em;
+ul .contacts{
+  padding-left:0px;
 }
