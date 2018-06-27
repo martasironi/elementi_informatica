@@ -39,13 +39,24 @@ h1 {
 }
 .moodboards{
   width:100vw;
-  height:60vh;
+  height:25vh;
   text-align:center;
   padding-top: 1.5em;
   align-content:center;
   position: absolute;
   left:0%;
   top:350px;
+}
+
+.progetti{
+    width:100vw;
+    height:25vh;
+    text-align:center;
+    padding-top: 1.5em;
+    align-content:center;
+    position: absolute;
+    left:0%;
+    top:1200px;
 }
 </style>
 
@@ -78,33 +89,55 @@ h1 {
 
 <div class="moodboards">
 <h2> moodboards </h2>
-  <div class="w3-content w3-display-container">
-    <img class="mySlides" src="moodboard1.jpg" style="width:100%">
-    <img class="mySlides" src="moodboard2.jpg" style="width:100%">
-    <img class="mySlides" src="moodboard3.jpg" style="width:100%">
+ <div class="w3-content w3-display-container">
+  <img class="mySlides1" src="moodboard1.jpg" style="width:100%">
+  <img class="mySlides1" src="moodboard2.jpg" style="width:100%">
+  <img class="mySlides1" src="moodboard3.jpg" style="width:100%">
 
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-  </div>
+ <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+ <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+ </div>
 </div>
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
+<div class="progetti">
+<h2> PROGETTI </h2>
+<div class="w3-content w3-display-container">
+  <img class="mySlides2" src="copertina.png" style="width:100%">
+  <img class="mySlides2" src="brief2.png" style="width:100%">
+  <img class="mySlides2" src="brief2.2.png" style="width:100%">
+  <img class="mySlides2" src="esercitazione3.gif" style="width:100%">
+  <img class="mySlides2" src="tenaglia.png" style="width:100%">
+  <img class="mySlides2" src="tenaglia2.png" style="width:100%">
+  <img class="mySlides2" src="tenaglia3.png" style="width:100%">
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+</div>
+</div>
+
+
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showDivs(1, 0);
+showDivs(1, 1);
+
+function plusDivs(n, no) {
+  showDivs(slideIndex[no] += n, no);
 }
 
-function showDivs(n) {
+function showDivs(n, no) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";
+  x[slideIndex[no]-1].style.display = "block";
 }
 </script>
+
+
 </body>
